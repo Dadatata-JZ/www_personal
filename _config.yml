@@ -1,8 +1,25 @@
+# Site configuration
+title: "Jz"
+email: ""
+description: "Personal website"
+
+# Where the site is hosted (GitHub Pages)
+url: "https://dadadata-jz.github.io"   # ← your GitHub Pages root
+baseurl: "/www_personal"               # ← your repo name
+
+# Build settings
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /msaveski
+
+markdown: kramdown
+theme: minima
 
 collections:
   projects:
     output: true
+
+# Optional but recommended: enable future-proof plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
